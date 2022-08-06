@@ -18,7 +18,7 @@ ELK Stack is used to get container logs and visualize with kibana. Here, filebea
 I create configmap and secret kubernetes objects for application. Secret is used for sensitive data and configmap is used for other configuration data. 
 
 # Justification (On-prem|public cloud|hybrid)
-The software application which has requirements client request may increase day-by-day and in that case scalable and distributed system is requred. Public cloud has scope to increase resources as per need like autoscalling policy. We also concern about data security and durability. If we have requirements such a that we need archive data for long period of time then in that case we can use public cloud. If there has less requirements we can use on-prem or hybrid cloud. Actually base on requirements we can choose the option. 
+The software application which has requirements client request may increase day-by-day and in that case scalable and distributed system is requred. Public cloud has scope to increase resources as per need like autoscalling policy. We also concern about data security and durability. If we have requirements such a that we need archive data for long period of time then in that case we can use public cloud. Also application nature is like that when increasing trrafic need more resources to provision and when traffic goes down then decrease the reousrces in that case public cloud is the best option. If there has requirements that meets for the on-prem or hybrid we can choose it. Actually base on requirements we can choose the option. 
 
 
 

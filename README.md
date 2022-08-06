@@ -4,7 +4,7 @@ Here, Netflix Eureka Service discovery microservice consists of several modules 
 # Eureka Service
 Accroding to design, eureka is a service discovery module and don't need to register itself but all back-end module or services should be registered with this eureka.
 # Gateway Service
-Gateway service should be register with eureka which is responsible to establish communicaiton between fornted and backend. Gateway holds respective api pattern information and route information means incoming api request should match with api pattern and forward that request to back-end after getting details about the respective service from eureka and gateway also acts as load balancer. 
+Gateway service should be register with eureka which is responsible to establish communicaiton between front-end and back-end. Gateway holds respective api pattern information and routes request means incoming api request should match with api pattern and forward that request to back-end after getting details about the respective service from eureka and gateway also acts as load balancer. 
 # Spring Config service
 Config service also should register with eureka and it holds a git repo where has centralize YAML content. These YAML files are configured with DB information, gateway information and eureka instance information and others authentication iformation. Every back-end has a bootstrap YAML file is for conecting to config server to load the respective YAML details. 
 

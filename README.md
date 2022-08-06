@@ -8,6 +8,12 @@ Gateway service should be register with eureka which is responsible to establish
 # Spring Config service
 Config service also should register with eureka and it holds a git repo where has centralize YAML content. These YAML files are configured with DB information, gateway information and eureka instance information and others authentication iformation. Every back-end has a bootstrap YAML file is for conecting to config server to load the respective YAML details. 
 
+# MinIO
+MinIO is for object storage like AWS S3 bucket and deploy as pod in kubernetes cluster which is used for the file storage server. 
+
+# Logging and monitoring
+ELK Stack is used to get container logs and visualize with kibana. Here, filebeat is used as a log shipper and forwording log data to logstash. Elasticsearch is deployed as a DB where index is created. 
+
 
 
 

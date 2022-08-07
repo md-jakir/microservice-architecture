@@ -9,7 +9,7 @@ Gateway service should be register with eureka which is responsible to establish
 Config service also should register with eureka and it holds a git repo where has centralize YAML content. These YAML files are configured with DB information, gateway information and eureka instance information and others authentication information. Every back-end has a bootstrap YAML file is for conecting to config server to load the respective YAML file details. 
 
 # MinIO
-MinIO is for object storage like AWS S3 bucket and deploy as pod in kubernetes cluster which is used for the file storage server. 
+MinIO is for object storage like AWS S3 bucket and deploy as deployment in kubernetes cluster which is used for the file storage server. MinIO volume is NFS share and file server storage container is using that volume.  
 
 # Logging and monitoring
 ELK Stack is used to get container logs and visualize with kibana. Here, filebeat is used as a log shipper and forwording log data to logstash. Elasticsearch is deployed as a DB where index is created. Kibana is used to visualize the index data. 

@@ -6,7 +6,7 @@ Accroding to design, eureka is a service discovery module and don't need to regi
 # Gateway Service
 Gateway service should be register with eureka which is responsible to establish communicaiton between front-end and back-end. Gateway holds respective api pattern information and routes request means incoming api request should match with api pattern and forward that request to back-end after getting details about the respective service from eureka and gateway also acts as load balancer. 
 # Spring Config service
-Config service also should register with eureka and it holds a git repo where has centralize YAML content. These YAML files are configured with DB information, gateway information and eureka instance information and others authentication information. Every back-end has a bootstrap YAML file is for conecting to config server to load the respective YAML file details. 
+Config service also should register with eureka and it holds a git repo where has centralize YAML content. These YAML files are configured with DB information, gateway information and eureka instance information and others authentication information. Every back-end has a bootstrap YAML file is for conecting to config server to load the respective YAML file's content. 
 
 # MinIO
 MinIO is for object storage like AWS S3 bucket and deploy as deployment in kubernetes cluster which is used for the file storage server. MinIO volume is NFS share and file server storage container is using that volume.  
